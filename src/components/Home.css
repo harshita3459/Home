@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(17%) brightness(50%);
+  z-index: -1;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #000000a7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(121, 120, 120, 0);
+  backdrop-filter: blur(8px);
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+nav .logo {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 2rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.auth-links {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+  color: #f9f2f2;
+}
+
+.auth-links:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  color: #e2eee5;
+}
+
+header {
+  text-align: center;
+  margin: 2rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 7rem;
+}
+
+header p {
+  margin: 15px 0;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-color: transparent;
+}
+
+header button:hover {
+  background-color: #689f75cf;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+
+.roadmap {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.roadmap-wrapper {
+  position: relative;
+}
+
+.roadmap-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 2rem;
+  padding: 2rem;
+  scroll-behavior: smooth;
+}
+
+.roadmap-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.roadmap-item h4 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-10px);
+}
+
+.navigate-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navigate-btn:hover {
+  background-color: #689f75cf;
+}
+
+.scroll-left,
+.scroll-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-left {
+  left: 0;
+}
+
+.scroll-right {
+  right: 0;
+}
+
+.roadmap {
+  padding: 2rem 0;
+  /* Reduced padding to move the section upwards */
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  /* Reduced bottom margin to move the heading closer to the top */
+  margin-top: -1rem;
+  /* Added a negative top margin to move the heading upwards */
+}
