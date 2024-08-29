@@ -6,11 +6,11 @@
 .login-page {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Shift the form to the right */
+    justify-content: center; /* Shift the form to the right */
     height: 100vh;
     position: relative;
     overflow: hidden;
-    padding-right: 30%;
+    /* padding-right: 35%; */
     /* ye chiz center ke liye */
 }
 
@@ -34,6 +34,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px; /* Set a maximum width for the box */
     width: 100%;
+    
 }
 
 .login-form h2 {
@@ -107,4 +108,5 @@
 
 
 }
+
 

@@ -66,11 +66,11 @@ function Home() {
                 <button className="navigate-btn">View Details</button>
               </div>
               <div className="roadmap-item">
-                <h4>Full Stack</h4>
+                <h4>FullStack</h4>
                 <button className="navigate-btn">View Details</button>
               </div>
               <div className="roadmap-item">
-                <h4>Web Development</h4>
+                <h4>Web D</h4>
                 <button className="navigate-btn">View Details</button>
               </div>
             </div>

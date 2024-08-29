@@ -6,12 +6,12 @@
 .signup-page {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     /* Shift the form to the right */
     height: 100vh;
     position: relative;
     overflow: hidden;
-    padding-right: 30%;
+    
 }
 
 #background-video {
